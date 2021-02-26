@@ -37,8 +37,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             self.movies = dataDictionary["results"] as! [[String:Any]]
               // Reload your table view data
             self.movieTableView.reloadData()
-            
-            print(dataDictionary)
+        
            }
         }
         task.resume()
@@ -58,8 +57,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
-        print("This is row \(indexPath.row)")
-//        cell.titleLabel.text = "This is row \(indexPath.row)"
         
         let baseUrl = "https://image.tmdb.org/t/p/w92"
         let posterPath = movie["poster_path"] as! String
@@ -69,15 +66,28 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        //Get the selected movie
+        let cell = sender as! UITableViewCell
+        let indexpath = movieTableView.indexPath(for: cell)!
+        let movie = movies[indexpath.row]
+        
+        
+        //Pass the selected movie
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        //cleanup - deselect the selected row
+        movieTableView.deselectRow(at: indexpath, animated: true)
     }
-    */
+
     
 
 }

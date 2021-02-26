@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3BC83FAFD6D87CDD06B8437F /* Pods_UITable_View_Demo_UITable_View_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D349C28B3DE4144495A05877 /* Pods_UITable_View_Demo_UITable_View_DemoUITests.framework */; };
+		9472890E25E8C80C00E46AB6 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472890D25E8C80C00E46AB6 /* MovieDetailsViewController.swift */; };
+		9472891025E8D04700E46AB6 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472890F25E8D04700E46AB6 /* MovieGridViewController.swift */; };
+		9472891225E8D3E600E46AB6 /* MovieGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472891125E8D3E600E46AB6 /* MovieGridCollectionViewCell.swift */; };
 		94DCE4CE25D85A140042824B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DCE4CD25D85A140042824B /* AppDelegate.swift */; };
 		94DCE4D025D85A140042824B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DCE4CF25D85A140042824B /* SceneDelegate.swift */; };
 		94DCE4D225D85A140042824B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DCE4D125D85A140042824B /* ViewController.swift */; };
@@ -45,6 +48,9 @@
 		36E972DE44698A913C436899 /* Pods-UITable View Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITable View Demo.release.xcconfig"; path = "Target Support Files/Pods-UITable View Demo/Pods-UITable View Demo.release.xcconfig"; sourceTree = "<group>"; };
 		73AD74EF0AAFFC47D657C26E /* Pods-UITable View DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITable View DemoTests.release.xcconfig"; path = "Target Support Files/Pods-UITable View DemoTests/Pods-UITable View DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		91553AA937E4883EB6CA96EB /* Pods-UITable View Demo-UITable View DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITable View Demo-UITable View DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-UITable View Demo-UITable View DemoUITests/Pods-UITable View Demo-UITable View DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9472890D25E8C80C00E46AB6 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		9472890F25E8D04700E46AB6 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		9472891125E8D3E600E46AB6 /* MovieGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCollectionViewCell.swift; sourceTree = "<group>"; };
 		94DCE4CA25D85A140042824B /* UITable View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITable View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DCE4CD25D85A140042824B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94DCE4CF25D85A140042824B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +145,9 @@
 				94DCE4DB25D85A190042824B /* Info.plist */,
 				94E518B825E834C700F8569F /* HomeViewController.swift */,
 				94E518BA25E8414E00F8569F /* MovieCell.swift */,
+				9472890D25E8C80C00E46AB6 /* MovieDetailsViewController.swift */,
+				9472890F25E8D04700E46AB6 /* MovieGridViewController.swift */,
+				9472891125E8D3E600E46AB6 /* MovieGridCollectionViewCell.swift */,
 			);
 			path = "UITable View Demo";
 			sourceTree = "<group>";
@@ -171,7 +180,6 @@
 				AD520E264FBBC4E19344EC8C /* Pods-UITable View DemoTests.debug.xcconfig */,
 				73AD74EF0AAFFC47D657C26E /* Pods-UITable View DemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -416,6 +424,9 @@
 			files = (
 				94DCE4D225D85A140042824B /* ViewController.swift in Sources */,
 				94DCE4CE25D85A140042824B /* AppDelegate.swift in Sources */,
+				9472890E25E8C80C00E46AB6 /* MovieDetailsViewController.swift in Sources */,
+				9472891225E8D3E600E46AB6 /* MovieGridCollectionViewCell.swift in Sources */,
+				9472891025E8D04700E46AB6 /* MovieGridViewController.swift in Sources */,
 				94DCE4D025D85A140042824B /* SceneDelegate.swift in Sources */,
 				94E518BB25E8414E00F8569F /* MovieCell.swift in Sources */,
 				94E518B925E834C700F8569F /* HomeViewController.swift in Sources */,
